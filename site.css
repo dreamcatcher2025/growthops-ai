@@ -19,8 +19,8 @@ p{margin:0}a{color:inherit}
 .sec{padding:64px 0 96px;text-align:center}
 .sec h2{font-size:clamp(28px,4vw,46px)}
 .sec>.wrap>p{margin:16px auto 0;color:var(--mut);font-size:17px;max-width:56ch}
-.calendly-inline-widget{margin:0 auto;max-width:1120px;min-width:320px;height:700px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)}
-@media(max-width:640px){.calendly-inline-widget{margin:0 auto;max-width:1120px;min-width:320px;height:700px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)}}
+.calendly-inline-widget{margin:0 auto;max-width:1120px;min-width:320px;height:820px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+@media(max-width:640px){.calendly-inline-widget{margin:0 auto;max-width:1120px;min-width:320px;height:820px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)}}
 .list{margin:36px auto 0;padding:0;list-style:none;max-width:720px;text-align:left}
 .list li{background:rgba(0,0,0,.55);border:1px solid var(--line2);border-radius:14px;padding:18px 22px 18px 52px;margin-top:12px;position:relative;color:var(--mut)}
 .list li::before{content:"";position:absolute;left:22px;top:26px;width:14px;height:8px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg)}
