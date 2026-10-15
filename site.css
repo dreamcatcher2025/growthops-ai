@@ -35,3 +35,6 @@ p{margin:0}a{color:inherit}
 .foot{padding:36px 0;color:var(--mut2);font-size:13px;border-top:1px solid var(--line2)}
 .foot .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
 .foot a{color:var(--mut);text-decoration:none;margin-left:18px}
+.sec-vsl{padding:24px 0 32px}
+.vsl.vsl-wide{max-width:960px}
+.vsl.vsl-wide video{aspect-ratio:16/9;object-fit:contain}

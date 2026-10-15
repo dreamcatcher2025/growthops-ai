@@ -6,6 +6,12 @@
   <h1>Your strategy call is on the calendar.</h1>
   <p>Check your email for the confirmation. It has the Google Meet link and a calendar invite.</p>
 </div></section>
+<section class="sec sec-vsl"><div class="wrap">
+  <div class="eyebrow">Watch this before your call · 16 min</div>
+  <h2>Why your best ad keeps dying, and the 15&#8209;ad fix</h2>
+  <p>It covers how we work, what you get and what it costs, so we can spend the call on your account.</p>
+  <div class="vsl vsl-wide"><video id="vsl" controls playsinline preload="none" poster="vsl/poster.jpg"></video></div>
+</div></section>
 <section class="sec"><div class="wrap">
   <h2>Before the call</h2>
   <ul class="list">
@@ -15,4 +21,11 @@
   </ul>
 </div></section>
 <footer class="foot"><div class="wrap"><div>© 2026 GrowthOps AI Limited · Hong Kong</div><div><a href="mailto:hello@growthopsads.com">hello@growthopsads.com</a><a href="privacy.html">Privacy Policy</a></div></div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.13/hls.min.js"></script>
+<script>
+(function(){var v=document.getElementById('vsl'),src='vsl/master.m3u8';
+  if(v.canPlayType('application/vnd.apple.mpegurl')){v.src=src;}
+  else if(window.Hls&&Hls.isSupported()){var h=new Hls({capLevelToPlayerSize:true});h.loadSource(src);h.attachMedia(v);}
+})();
+</script>
 </body></html>
