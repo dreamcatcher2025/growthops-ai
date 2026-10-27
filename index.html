@@ -15,7 +15,16 @@
 .grid{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-top:40px}
 .grid figure{margin:0;width:calc((100% - 40px)/3);max-width:320px;min-width:150px}
 .grid video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#0F172A;border-radius:14px;box-shadow:0 12px 32px rgba(15,23,42,.14)}
-.grid figcaption{margin-top:10px;font-weight:600;font-size:14px}
+.grid figcaption{margin-top:10px;font-weight:700;font-size:14px}
+.grid figcaption span{display:block;font-weight:500;color:var(--mut2);font-size:13px}
+.grid[hidden]{display:none}
+.tabs{display:inline-flex;gap:4px;margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px}
+.tabs button{font:inherit;font-weight:600;font-size:15px;border:0;background:none;color:var(--mut);padding:9px 18px;border-radius:999px;cursor:pointer}
+.tabs button.on{background:var(--acc);color:#fff}
+.proof .who{font-weight:700;font-size:13px;color:var(--mut2);letter-spacing:.02em}
+.proof .big{font-size:44px;font-weight:800;color:var(--acc);letter-spacing:-.03em;margin-top:6px}
+.proof .what{font-weight:600}
+.proof a{display:inline-block;margin-top:12px;font-size:13px;color:var(--acc);font-weight:600}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:40px;text-align:left}
 .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}
 .card .n{font-weight:800;color:var(--acc);font-size:14px;letter-spacing:.08em}
@@ -55,7 +64,7 @@ fbq('init','1099020262837967');fbq('track','PageView');
 <body>
 <header class="nav"><div class="wrap">
   <a class="brand" href="./"><img src="logo.svg" alt=""><span>GrowthOps AI</span></a>
-  <nav class="links"><a href="#work">Our ads</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav>
+  <nav class="links"><a href="#work">Examples</a><a href="#proof">Proof</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav>
   <a class="btn btn-sm" href="https://go.growthopsads.com/guarantee-page-7169">See If You Qualify</a>
 </div></header>
 
@@ -64,22 +73,47 @@ fbq('init','1099020262837967');fbq('track','PageView');
   <span class="pill">Ecom brands spending $10K+/month on Meta</span>
   <h1>3 winning video ads that beat your best ad in 90 days. <span class="hl">Or you don't pay another dollar until we do.</span></h1>
   <p class="lead">We study what's already winning in your niche, write the scripts, and make the video ads for you with AI. 20 new creatives every month, launched in your ad account for you. Your first 3 are free.</p>
-  <div class="cta-row"><a class="btn" href="https://go.growthopsads.com/guarantee-page-7169">See If You Qualify</a><a class="btn btn-ghost" href="#work">See our ads</a></div>
+  <div class="cta-row"><a class="btn" href="https://go.growthopsads.com/guarantee-page-7169">See If You Qualify</a><a class="btn btn-ghost" href="#work">See examples</a></div>
   <p class="note">60-second application. If it's a fit, you book a call.</p>
 </div></section>
 
 <section class="sec soft" id="work"><div class="wrap">
   <div class="eyebrow">Real ads, made with AI</div>
-  <h2>The ads we run for our own brand</h2>
-  <p class="lead">Singing ads, talking heads, street interviews, animated stories. Made by our team without a single camera.</p>
-  <div class="grid" id="ads">
-    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae0801b2d54004a64395b63.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae07edad542268bb45ffb23.mp4"></video><figcaption>Singing ad</figcaption></figure>
-    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae0801be477f470ce975f6d.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae07eda36aa4a07e8013759.mp4"></video><figcaption>Founder-style talking ad</figcaption></figure>
-    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae0801be477f470ce975f6e.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae07eda36aa4a07e8013764.mp4"></video><figcaption>Street interview</figcaption></figure>
-    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae0801bc62ddbd638d39a1c.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae07edac62ddbd638d3839a.mp4"></video><figcaption>Seasonal singing ad</figcaption></figure>
-    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae0801b9c1511d5b9fd9b8f.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae07eda736386d0dc0298bb.mp4"></video><figcaption>Animated story ad</figcaption></figure>
+  <h2>See examples of what you'll get</h2>
+  <p class="lead">Mini-dramas, claymation, street interviews, singing ads, AI avatars and AI creators. Every format below was made by our team without a single camera.</p>
+  <div class="tabs" role="tablist"><button class="on" data-for="brand">Brand ads</button><button data-for="own">Our own ads</button><button data-for="creators">AI creators</button></div>
+  <div class="grid" data-tab="brand">
+    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb352dac05a0d91fe19c22.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb359dac05a0d91fe1a840.mp4"></video><figcaption>Mini-drama<span>Made for Jaunty</span></figcaption></figure>
+    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb352da0c3fa1f7d9270de.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb357d3699fd27a0b42d91.mp4"></video><figcaption>Claymation<span>Energy drink demo</span></figcaption></figure>
+    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb352dfdcb71bb829159cc.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb3586ac05a0d91fe1a527.mp4"></video><figcaption>Street interview<span>Energy drink demo</span></figcaption></figure>
+    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb352d55feecaeeac7d639.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb3598a0c3fa1f7d927e2e.mp4"></video><figcaption>Mini-drama<span>Office story</span></figcaption></figure>
+    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb352da0c3fa1f7d9270f3.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb35803699fd27a0b42dfd.mp4"></video><figcaption>AI avatar<span>Talking head + motion graphics</span></figcaption></figure>
   </div>
-  <p class="note">Every person shown is AI-generated. These are ads for GrowthOps, not client results.</p>
+  <div class="grid" data-tab="own" hidden>
+    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae0801b2d54004a64395b63.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae07edad542268bb45ffb23.mp4"></video><figcaption>Singing ad<span>GrowthOps</span></figcaption></figure>
+    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae0801be477f470ce975f6d.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae07eda36aa4a07e8013759.mp4"></video><figcaption>Founder-style talking ad<span>GrowthOps</span></figcaption></figure>
+    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae0801be477f470ce975f6e.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae07eda36aa4a07e8013764.mp4"></video><figcaption>Street interview<span>GrowthOps</span></figcaption></figure>
+    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae0801bc62ddbd638d39a1c.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae07edac62ddbd638d3839a.mp4"></video><figcaption>Seasonal singing ad<span>GrowthOps</span></figcaption></figure>
+    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae0801b9c1511d5b9fd9b8f.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6ae07eda736386d0dc0298bb.mp4"></video><figcaption>Animated story ad<span>GrowthOps</span></figcaption></figure>
+  </div>
+  <div class="grid" data-tab="creators" hidden>
+    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb352da0c3fa1f7d9270f1.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb35a155feecaeeac7e3b9.mp4"></video><figcaption>AI creator<span>Couple dance</span></figcaption></figure>
+    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb352e55feecaeeac7d682.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb35a4a0c3fa1f7d927f69.mp4"></video><figcaption>AI creator<span>Group trend</span></figcaption></figure>
+    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb352e55feecaeeac7d683.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb35a7fdcb71bb82916957.mp4"></video><figcaption>AI creator<span>Lifestyle</span></figcaption></figure>
+    <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb352ea0c3fa1f7d927130.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb35aca0c3fa1f7d928025.mp4"></video><figcaption>AI creator<span>Fitness</span></figcaption></figure>
+  </div>
+  <p class="note">Every person shown is AI-generated. "Demo" ads are samples we made to show the format. "Our own ads" run on GrowthOps' Meta account. None of these are client results.</p>
+</div></section>
+
+<section class="sec" id="proof"><div class="wrap">
+  <div class="eyebrow">Proof, not promises</div>
+  <h2>Fresh creative is what moves CPA. Here's the proof.</h2>
+  <div class="cards proof">
+    <div class="card"><div class="who">LOMOJI · wellness e-commerce</div><div class="big">−42%</div><div class="what">cost per purchase (+74.6% purchases)</div><p>One creator style → a diverse mix of creators. Meta A/B test, Oct 29 – Nov 12, 2025.</p><a href="https://www.facebook.com/business/success/lomoji" target="_blank" rel="noopener">Source: Meta for Business case study</a></div>
+    <div class="card"><div class="who">A101 · retail e-commerce</div><div class="big">−17%</div><div class="what">cost per purchase (+20.9% sales)</div><p>Static product photos → product video ads. Meta A/B test, Aug 12 – Sep 1, 2026.</p><a href="https://www.facebook.com/business/success/a101" target="_blank" rel="noopener">Source: Meta for Business case study</a></div>
+    <div class="card"><div class="who">bonprix · fashion</div><div class="big">−13%</div><div class="what">cost per purchase (1.4X incremental ROAS)</div><p>22 creator-led videos took 30% of budget. Meta lift test, Oct 23 – Nov 6, 2025.</p><a href="https://www.facebook.com/business/success/3-bonprix" target="_blank" rel="noopener">Source: Meta for Business case study</a></div>
+  </div>
+  <p class="note" style="max-width:70ch;margin:18px auto 0">Results shown are from publicly reported third-party case studies (Meta for Business), not GrowthOps clients. Meta is not affiliated with and does not endorse GrowthOps. Individual results vary. Meta itself recommends at least 20 diversified ads per Advantage+ shopping campaign.</p>
 </div></section>
 
 <section class="sec pain"><div class="wrap">
@@ -158,6 +192,7 @@ fbq('init','1099020262837967');fbq('track','PageView');
   <div class="fine">All people shown in our ads are AI-generated. This site is not part of the Facebook website or Meta Platforms, Inc., and is not endorsed by Meta in any way.</div>
 </div></footer>
 <script>
-document.querySelectorAll('#ads video').forEach(function(v){v.addEventListener('play',function(){document.querySelectorAll('video').forEach(function(o){if(o!==v&&!o.paused)o.pause()})})});
+document.querySelectorAll('#work video').forEach(function(v){v.addEventListener('play',function(){document.querySelectorAll('video').forEach(function(o){if(o!==v&&!o.paused)o.pause()})})});
+document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.tabs button').forEach(function(x){x.classList.toggle('on',x===b)});document.querySelectorAll('#work .grid').forEach(function(g){g.hidden=g.dataset.tab!==b.dataset.for});document.querySelectorAll('#work video').forEach(function(v){v.pause()})})});
 </script>
 </body></html>
