@@ -20,7 +20,18 @@
 .grid figcaption{margin-top:10px;font-weight:700;font-size:14px}
 .grid figcaption span{display:block;font-weight:500;color:var(--mut2);font-size:13px}
 .grid[hidden]{display:none}
-.ig-line{margin-top:18px;font-weight:600;font-size:15px}.ig-line a{color:var(--acc);text-decoration:none}.ig-line a:hover{text-decoration:underline}
+.ig-line{margin-top:18px;font-weight:600;font-size:15px;color:var(--mut)}.ig-line a{color:var(--acc);text-decoration:none}.ig-line a:hover{text-decoration:underline}
+.links .soc{display:flex;align-items:center}.links .soc svg{width:19px;height:19px}
+.grid figure{position:relative}.grid figure::before{content:"AI-generated";position:absolute;top:10px;left:10px;z-index:1;font-size:11px;font-weight:600;color:#fff;background:rgba(15,23,42,.62);padding:4px 9px;border-radius:999px;pointer-events:none}
+.endgrid{display:grid;grid-template-columns:1fr 1.15fr;gap:16px;text-align:left;max-width:1000px;margin:0 auto}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-align:center;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 12px;transition:border-color .15s,box-shadow .15s}
+.tile:hover{border-color:var(--acc);box-shadow:0 8px 24px rgba(37,99,235,.12)}
+.tile svg{width:26px;height:26px;color:var(--acc);margin-bottom:4px}.tile b{font-size:16px}.tile span{font-size:13px;color:var(--mut2);word-break:break-all}
+.endcard{background:#0F172A;color:#fff;border-radius:16px;padding:36px;display:flex;flex-direction:column;justify-content:center;gap:16px}
+.endcard h2{color:#fff;margin:0;max-width:none;font-size:clamp(26px,3.2vw,36px)}.endcard p{color:#CBD5E1;font-size:16px}
+.btn-light{align-self:flex-start;background:#fff;color:#0F172A;box-shadow:none}.btn-light:hover{background:#E2E8F0}
+@media(max-width:760px){.endgrid{grid-template-columns:1fr}.endcard{padding:28px}}
 .tabs{display:inline-flex;gap:4px;margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px}
 .tabs button{font:inherit;font-weight:600;font-size:15px;border:0;background:none;color:var(--mut);padding:9px 18px;border-radius:999px;cursor:pointer}
 .tabs button.on{background:var(--acc);color:#fff}
@@ -54,9 +65,7 @@
 .faq summary::after{content:"+";color:var(--acc);font-size:22px;line-height:1}
 .faq details[open] summary::after{content:"–"}
 .faq p{margin-top:10px;color:var(--mut)}
-.final{background:#0F172A;color:#fff}
-.final h2{color:#fff}
-.final .lead{color:#CBD5E1}
+.final{background:var(--soft);border-top:1px solid var(--line)}
 @media(max-width:640px){.grid{gap:12px}.grid figure{width:calc((100% - 12px)/2)}.hero{padding:48px 0 48px}.sec{padding:60px 0}.price{padding:24px}}
 </style>
 <script>
@@ -67,7 +76,7 @@ fbq('init','1099020262837967');fbq('track','PageView');
 <body>
 <header class="nav"><div class="wrap">
   <a class="brand" href="./"><img src="logo.svg" alt=""><span>GrowthOps AI</span></a>
-  <nav class="links"><a href="#work">Examples</a><a href="#proof">Proof</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="https://www.instagram.com/yuelin.aiads/" target="_blank" rel="noopener">Instagram</a></nav>
+  <nav class="links"><a href="#work">Examples</a><a href="#proof">Proof</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a class="soc" href="https://www.instagram.com/yuelin.aiads/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a><a class="soc" href="https://www.tiktok.com/@yuelin.aiads" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 3c.3 2.2 1.6 3.7 3.9 3.9v3.1c-1.4.1-2.7-.3-3.9-1v6.2c0 3.6-2.6 6-5.9 5.8-3.6-.2-5.9-3.5-4.9-7 .7-2.4 3-4 5.6-3.8v3.2c-.4-.1-.8-.1-1.2 0-1.3.3-2 1.5-1.7 2.8.3 1.1 1.4 1.8 2.6 1.6 1.2-.2 2-1.2 2-2.5V3h3.5z"/></svg></a></nav>
   <a class="btn btn-sm" href="https://go.growthopsads.com/guarantee-page-7169">See If You Qualify</a>
 </div></header>
 
@@ -109,7 +118,7 @@ fbq('init','1099020262837967');fbq('track','PageView');
     <figure><video controls playsinline preload="none" poster="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb352ea0c3fa1f7d927130.jpg" src="https://assets.cdn.filesafe.space/vjYn6JWwqqvbUFm8tBEt/media/6adb35aca0c3fa1f7d928025.mp4"></video><figcaption>AI creator<span>Fitness</span></figcaption></figure>
   </div>
   <p class="note">Every person shown is AI-generated. "Demo" ads are samples we made to show the format. "Our own ads" run on GrowthOps' Meta account. None of these are client results.</p>
-  <p class="ig-line"><a href="https://www.instagram.com/yuelin.aiads/" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="vertical-align:-2px;margin-right:5px"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>See our newest ads on Instagram: @yuelin.aiads</a></p>
+  <p class="ig-line">New ads every week on <a href="https://www.instagram.com/yuelin.aiads/" target="_blank" rel="noopener">Instagram</a> and <a href="https://www.tiktok.com/@yuelin.aiads" target="_blank" rel="noopener">TikTok</a>: @yuelin.aiads</p>
 </div></section>
 
 <section class="sec" id="proof"><div class="wrap">
@@ -187,15 +196,25 @@ fbq('init','1099020262837967');fbq('track','PageView');
 </div></section>
 
 <section class="sec final"><div class="wrap">
-  <h2>Stop letting one tired ad carry your account.</h2>
-  <p class="lead">Apply in 60 seconds. If it's a fit, you'll pick a time for a call and we'll show you what we'd make first.</p>
-  <div class="cta-row"><a class="btn" href="https://go.growthopsads.com/guarantee-page-7169">See If You Qualify</a></div>
+  <div class="endgrid">
+    <div class="tiles">
+      <a class="tile" href="https://www.instagram.com/yuelin.aiads/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><b>Instagram</b><span>@yuelin.aiads</span></a>
+      <a class="tile" href="https://www.tiktok.com/@yuelin.aiads" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 3c.3 2.2 1.6 3.7 3.9 3.9v3.1c-1.4.1-2.7-.3-3.9-1v6.2c0 3.6-2.6 6-5.9 5.8-3.6-.2-5.9-3.5-4.9-7 .7-2.4 3-4 5.6-3.8v3.2c-.4-.1-.8-.1-1.2 0-1.3.3-2 1.5-1.7 2.8.3 1.1 1.4 1.8 2.6 1.6 1.2-.2 2-1.2 2-2.5V3h3.5z"/></svg><b>TikTok</b><span>@yuelin.aiads</span></a>
+      <a class="tile" href="mailto:hello@growthopsads.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><b>Email us</b><span>hello@growthopsads.com</span></a>
+      <a class="tile" href="https://go.growthopsads.com/guarantee-page-7169"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg><b>Apply</b><span>60-second application</span></a>
+    </div>
+    <div class="endcard">
+      <h2>Stop letting one tired ad carry your account.</h2>
+      <p>Apply in 60 seconds. If it's a fit, you'll pick a time for a call and we'll show you what we'd make first.</p>
+      <a class="btn btn-light" href="https://go.growthopsads.com/guarantee-page-7169">See If You Qualify</a>
+    </div>
+  </div>
 </div></section>
 </main>
 
 <footer class="foot"><div class="wrap">
   <div>© 2026 GrowthOps AI Limited · Hong Kong</div>
-  <div><a href="mailto:hello@growthopsads.com">hello@growthopsads.com</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="https://www.instagram.com/yuelin.aiads/" target="_blank" rel="noopener">Instagram @yuelin.aiads</a></div>
+  <div><a href="mailto:hello@growthopsads.com">hello@growthopsads.com</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="https://www.instagram.com/yuelin.aiads/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@yuelin.aiads" target="_blank" rel="noopener">TikTok</a></div>
   <div class="addr">GrowthOps AI Limited · Room 605, 6/F, Fa Yuen Commercial Building, 75-77 Fa Yuen Street, Mong Kok, Kowloon, Hong Kong · <a href="tel:+14122741566">+1 412-274-1566</a> · <a href="mailto:hello@growthopsads.com">hello@growthopsads.com</a></div>
   <div class="fine">All people shown in our ads are AI-generated. This site is not part of the Facebook website or Meta Platforms, Inc., and is not endorsed by Meta in any way.</div>
 </div></footer>
